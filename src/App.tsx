@@ -1,4 +1,4 @@
-import DashboardPage from "@/app/dashboard/page";
+import { DashboardPage } from "@/app/dashboard/page";
 
 function App() {
   return (
