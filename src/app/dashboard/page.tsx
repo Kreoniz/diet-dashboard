@@ -1,5 +1,4 @@
 import { AppSidebar } from "@/components/app-sidebar";
-import { ChartAreaInteractive } from "@/components/chart-area-interactive";
 import { SectionCards } from "@/components/section-cards";
 import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
@@ -18,10 +17,6 @@ export function DashboardPage() {
 
               <div className="px-4 lg:px-6">
                 <CaloriesIntakeWidget />
-              </div>
-
-              <div className="px-4 lg:px-6">
-                <ChartAreaInteractive />
               </div>
             </div>
           </div>

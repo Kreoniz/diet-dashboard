@@ -22,7 +22,7 @@ export function WaterIntakeWidget({
         <CardTitle>Потребление воды</CardTitle>
       </CardHeader>
 
-      <CardContent className="mt-auto relative h-40">
+      <CardContent className="mt-auto relative h-full">
         {/* Вода */}
         <div
           className="overflow-hidden rounded-lg absolute bottom-0 left-0 right-0 bg-blue-100 transition-all duration-500"
