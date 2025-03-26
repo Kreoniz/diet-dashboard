@@ -17,12 +17,12 @@ export function WaterIntakeWidget({
   const remaining = target - current;
 
   return (
-    <Card className="relative overflow-hidden pb-0">
+    <Card className="w-full relative overflow-hidden pb-0">
       <CardHeader>
         <CardTitle>Потребление воды</CardTitle>
       </CardHeader>
 
-      <CardContent className="mt-auto relative h-full">
+      <CardContent className="mt-auto relative min-h-40 h-full">
         {/* Вода */}
         <div
           className="overflow-hidden rounded-lg absolute bottom-0 left-0 right-0 bg-blue-100 transition-all duration-500"
