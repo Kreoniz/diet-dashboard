@@ -1,4 +1,5 @@
-import * as React from "react";
+import type * as React from "react";
+import { Link } from "react-router";
 import {
   IconDashboard,
   IconWriting,
@@ -29,24 +30,24 @@ const data = {
   navMain: [
     {
       title: "Панель",
-      url: "#",
+      url: "/dashboard",
       icon: IconDashboard,
     },
     {
       title: "Отчеты",
-      url: "#",
+      url: "/reports",
       icon: IconWriting,
     },
   ],
   navSecondary: [
     {
       title: "Настройки",
-      url: "#",
+      url: "/settings",
       icon: IconSettings,
     },
     {
       title: "Задать вопрос",
-      url: "#",
+      url: "/help",
       icon: IconHelp,
     },
   ],
@@ -62,10 +63,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <Link to="/dashboard">
                 <IconCarrot className="!size-5" />
                 <span className="text-base font-semibold">Панель здоровья</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
